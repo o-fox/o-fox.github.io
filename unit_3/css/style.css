@@ -1,0 +1,15 @@
+body {
+	text-align: center;
+	color: #152A7F;
+	background: url(images/swope.jpg);
+	background-size: cover;
+	font-family: "pt sans", sans-serif;
+}
+a {
+	text-decoration: none;
+	color: #07401A;
+	padding: 30px;
+}
+p {
+	font-size: 24px;
+}
