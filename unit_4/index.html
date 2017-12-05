@@ -2,52 +2,90 @@
 <html>
 <head>
 	<title>Tom O'Sullivan Foundation</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Pacifico" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 <body>
 	<header>
-		<h1>The Thomas P. O'Sullivan Foundation</h1>
+		<h1 id="title">The Thomas P. O'Sullivan Foundation</h1>
 	</header>
 
 	<nav>
-		<a href="#" class="navlink"> Home</a>
-		<a href="#" class="navlink"> Our Research</a>
-		<a href="#" class="navlink"> Contact Us</a>
+		<a href="#register" class="navlink"> Register</a>
+		<a href="#our_research" class="navlink"> Our Research</a>
+		<a href="#about" class="navlink"> About Tom</a>
+		<a href="#info" class="navlink"> Tournament Info</a>
+		<a href="#contact" class="navlink"> Contact Us</a>
 	</nav>
 
 	<section id="hero"> 
 		<img src="images/swope.jpg">
-		<a href="#" id="register">Register for the 11th Annual Golf Tourament</a>
+		<p id="herotext">The Thomas P. O'Sullivan IV Foundation was established to honor this special man and to celebrate his life's work of harmonizing mind, heart, spirit and body. This nonprofit organization provides funding for research, education, advocacy, prevention and early detection of colorectal cancer.</p> 
 	</section>	
 
-	<section>
-		<p>The Thomas P. O'Sullivan IV Foundation was established to honor this special man and to celebrate his life's work of harmonizing mind, heart, spirit and body. This nonprofit organization provides funding for research, education, advocacy, prevention and early detection of colorectal cancer.</p>
+	<section id="register" class="info_block">
+		<h2>Register</h2>
+		<p>The Thomas P. O'Sullivan IV Foundation funds research at the University of Kansas Cancer Center.  Shrikant Anant, PhD, Associate Director- Cancer Prevention and Control, at the University of Kansas Cancer Center, leads a team of scientists that are on the cutting edge of colorectal cancer research.</p>
 	</section>
 
-	<section>
+	<section id="our_research" class="info_block">
 		<h2>Our Research</h2>
 		<p>The Thomas P. O'Sullivan IV Foundation funds research at the University of Kansas Cancer Center.  Shrikant Anant, PhD, Associate Director- Cancer Prevention and Control, at the University of Kansas Cancer Center, leads a team of scientists that are on the cutting edge of colorectal cancer research.</p>
-		<a href="#" class="learnmore">Learn More</a>
 	</section>
 	
-	<section>
+	<section id="about" class="info_block">
 		<h2>About Tom</h2>
 		<p>The Thomas P. O'Sullivan IV Foundation was established in 2008 by family and friends to honor a special man, whose life was a beneficial presence.</p>
-		<a href="#" class="learnmore">Learn More</a>
 	</section>
 
-	<section>
+	<section id="info" class="info_block">
 		<h2>Tournament Info</h2>
 		<p>Please join us Friday, August 24th, 2018 at Swope Memorial Golf Course in Kansas City, Missouri for a day full of fun, raising much needed funds for colorectal cancer.</p>
-		<a href="#" class="learnmore">Learn More</a>
 	</section>	
 
-	<footer>
-		<!-- Need to add:
+	<footer id="contact" class="info_block">
+		<h2>Contact Us</h2>
+		Need to add:
 		Contact Us Info
-		Social Links -->
+		Social Links
 	</footer>
 
-
+<script type="text/javascript">$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });</script>
 </body>
 </html>
