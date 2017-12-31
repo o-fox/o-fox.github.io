@@ -1,223 +1,204 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tom O'Sullivan Foundation</title>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Pacifico" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+  <title>Tom O'Sullivan Foundation</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Pacifico" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
 </head>
 <body>
-	<header>
-		<h1 id="title">The Thomas P. O'Sullivan Foundation</h1>
-	</header>
-
-	<nav>
-		<a href="#register"> Register</a>
-		<a href="#our_research"> Our Research</a>
-		<a href="#about"> About Tom</a>
-		<a href="#info"> Tournament Info</a>
-		<a href="#contact"> Contact Us</a>
-	</nav>
-
-	<section id="hero"> 
-		<img src="images/swope.jpg">
-		<p id="herotext">The Thomas P. O'Sullivan IV Foundation was established to honor this special man and to celebrate his life's work of harmonizing mind, heart, spirit and body. This nonprofit organization provides funding for research, education, advocacy, prevention and early detection of colorectal cancer.</p> 
-	</section>	
-
-	<section id="register" class="info_block">
-		<h2>Register</h2>
-		<p>In selecting what type of fundraiser the Foundation should kick-off with, it was an easy decision. Tom loved to golf! Each fall, the Foundation holds the Tom O’Sullivan Memorial Golf Classic. This event is our annual fundraiser and we rely on the generosity of corporate sponsors, private donations, and our charitable golfers. Funds raised at the tournament support the Foundation’s objectives of education, research, advocacy, and prevention of colorectal cancer.</p>
-    <p>The tournament has become a much anticipated occasion, with the opportunity for golfers to play on some of the metropolitan area’s best courses.  Golfers enjoy lunch, beverages, themed holes, prizes, trophies, and a closing event with dinner and program about the Foundation’s mission and efforts.</p> 
-    <p>Make plans to join us Friday, August 24th, at Swope Memorial Golf Course in Kansas City, Missouri for a day full of fun, raising much needed funds for colorectal cancer.  If you have any questions, please <a href="mailto:maximpact.missouri@gmail.com?Subject=TPO20%Golf20%Tournament">email</a> our Tournament Chairperson, Jodi Sundaram.</p>
-		<div id="register_single">
-			<h3>Single Registration</h3>
-        	<form>
-          		<div class="input_field"> 
-          			<span><i aria-hidden="true" class="fa fa-envelope"></i></span>
-            		<input type="text" name="firstname" placeholder="First Name" required />
-          		</div>
-         		<div class="input_field"> 
-         			<span><i aria-hidden="true" class="fa fa-lock"></i></span>
-            		<input type="text" name="lastname" placeholder="Last Name" required />
-          		</div>
-          		<div class="input_field"> 
-          			<span><i aria-hidden="true" class="fa fa-lock"></i></span>
-            		<input type="text" name="email" placeholder="Email" required />
-          		</div>
-             	<div class="input_field"> 
-             		<span><i aria-hidden="true" class="fa fa-user"></i></span>
-                	<input type="text" maxlength="10" name="phonenumber" placeholder="Phone Number" />
-              	</div>
-              	<div class="input_field"> 
-              		<span><i aria-hidden="true" class="fa fa-user"></i></span>
-                	<input type="text" name="address" placeholder="Street Address" required />
-              	</div>
-            	<div class="input_field"> 
-              		<span><i aria-hidden="true" class="fa fa-user"></i></span>
-                	<input type="text" name="city" placeholder="City" required />
-              	</div>
-              	<div class="input_field"> 
-              		<span><i aria-hidden="true" class="fa fa-user"></i></span>
-                	<input type="text" name="state" placeholder="State" required />
-              	</div>
-              	<div class="input_field"> 
-              		<span><i aria-hidden="true" class="fa fa-user"></i></span>
-                	<input type="text" name="zip" placeholder="Zip Code" required />
-              	</div>
-              	<input type="submit" value="Pay Online">
-            </form>  
-        </div>
-        <div id="register_team">  
-        	<h3>Team Registration</h3>
-            <form>
-          		<div class="input_field"> 
-          			<span><i aria-hidden="true" class="fa fa-envelope"></i></span>
-            		<input type="text" name="firstname" placeholder="First Name" required />
-          		</div>
-         		<div class="input_field"> 
-         			<span><i aria-hidden="true" class="fa fa-lock"></i></span>
-            		<input type="text" name="lastname" placeholder="Last Name" required />
-          		</div>
-          		<div class="input_field"> 
-          			<span><i aria-hidden="true" class="fa fa-lock"></i></span>
-            		<input type="text" name="email" placeholder="Email" required />
-          		</div>
-             	<div class="input_field"> 
-             		<span><i aria-hidden="true" class="fa fa-user"></i></span>
-                	<input type="text" maxlength="10" name="phonenumber" placeholder="Phone Number" />
-              	</div>
-              	<div class="input_field"> 
-              		<span><i aria-hidden="true" class="fa fa-user"></i></span>
-                	<input type="text" name="address" placeholder="Street Address" required />
-              	</div>
-            	<div class="input_field"> 
-              		<span><i aria-hidden="true" class="fa fa-user"></i></span>
-                	<input type="text" name="city" placeholder="City" required />
-              	</div>
-              	<div class="input_field"> 
-              		<span><i aria-hidden="true" class="fa fa-user"></i></span>
-                	<input type="text" name="state" placeholder="State" required />
-              	</div>
-              	<div class="input_field"> 
-              		<span><i aria-hidden="true" class="fa fa-user"></i></span>
-                	<input type="text" name="zip" placeholder="Zip Code" required />
-              	</div>
-              	<div class="input_field"> 
-              		<span><i aria-hidden="true" class="fa fa-user"></i></span>
-                	<input type="text" name="team_name" placeholder="Name of Your Team" required />
-                </div>	
-                <div class="input_field"> 
-              		<span><i aria-hidden="true" class="fa fa-user"></i></span>
-                	<input type="text" name="name" placeholder="Golfer #1 Name" required />
-              	</div>
-              	<div class="input_field"> 
-              		<span><i aria-hidden="true" class="fa fa-user"></i></span>
-                	<input type="text" name="email" placeholder="Golfer #1 Email" required />
-              	</div>
-              	<div class="input_field"> 
-              		<span><i aria-hidden="true" class="fa fa-user"></i></span>
-                	<input type="text" name="name" placeholder="Golfer #2 Name" required />
-              	</div>
-              	<div class="input_field"> 
-              		<span><i aria-hidden="true" class="fa fa-user"></i></span>
-                	<input type="text" name="email" placeholder="Golfer #2 Email" required />
-              	</div>
-              	<div class="input_field"> 
-              		<span><i aria-hidden="true" class="fa fa-user"></i></span>
-                	<input type="text" name="name" placeholder="Golfer #3 Name" required />
-              	</div>
-              	<div class="input_field"> 
-              		<span><i aria-hidden="true" class="fa fa-user"></i></span>
-                	<input type="text" name="email" placeholder="Golfer #3 Email" required />
-              	</div>
-              	<div class="input_field"> 
-              		<span><i aria-hidden="true" class="fa fa-user"></i></span>
-                	<input type="text" name="name" placeholder="Golfer #4 Name" required />
-              	</div>
-              	<div class="input_field"> 
-              		<span><i aria-hidden="true" class="fa fa-user"></i></span>
-                	<input type="text" name="email" placeholder="Golfer #4 Email" required />
-              	</div>
-              	<input type="submit" value="Pay Online">
-            </form>	
-        </div> 	
-	</section>
-
-	<section id="our_research" class="info_block">
-		<h2>Our Research</h2>
-    <div id="twocolumn" class="clearfix">
-		  <p id="left">The Thomas P. O'Sullivan IV Foundation funds research at the University of Kansas Cancer Center.  Shrikant Anant, PhD, Associate Director- Cancer Prevention and Control, at the University of Kansas Cancer Center, leads a team of scientists that are on the cutting edge of colorectal cancer research. The Foundation provided seed money for two research teams working on root causes and behavior of colorectal cancer. We recognize, and support, the University of Kansas Cancer Center's quest to achieve the National Cancer Institute designation as a Comprehensive Cancer Center.  This designation will provide greater Kansas City, and the region, with access to world-class research, advanced cancer care and bring cutting-edge clinical trials close to home.</p>
-      <img id="right" src="images/research.jpg">
+  <header>
+    <h1 id="title">The Thomas P. O'Sullivan Foundation</h1>
+  </header>
+  <nav>
+    <a href="#register">Register</a> <a href="#our_research">Our Research</a> <a href="#about">About Tom</a> <a href="#info">Tournament Info</a> <a href="#contact">Contact Us</a>
+  </nav>
+  <section id="hero">
+    <img src="images/swope.jpg">
+    <p id="herotext">The Thomas P. O'Sullivan IV Foundation was established to honor this special man and to celebrate his life's work of harmonizing mind, heart, spirit and body. This nonprofit organization provides funding for research, education, advocacy, prevention and early detection of colorectal cancer.</p>
+  </section>
+  <section class="info_block clearfix" id="register">
+    <div class="infoblockleft">
+      <h2>Register</h2>
+      <p>In selecting what type of fundraiser the Foundation should kick-off with, it was an easy decision. Tom loved to golf! Each fall, the Foundation holds the Tom O’Sullivan Memorial Golf Classic. This event is our annual fundraiser and we rely on the generosity of corporate sponsors, private donations, and our charitable golfers. Funds raised at the tournament support the Foundation’s objectives of education, research, advocacy, and prevention of colorectal cancer.</p>
+      <p>The tournament has become a much anticipated occasion, with the opportunity for golfers to play on some of the metropolitan area’s best courses. Golfers enjoy lunch, beverages, themed holes, prizes, trophies, and a closing event with dinner and program about the Foundation’s mission and efforts.</p>
+      <p>Make plans to join us Friday, August 24th, at Swope Memorial Golf Course in Kansas City, Missouri for a day full of fun, raising much needed funds for colorectal cancer. If you have any questions, please <a href="mailto:maximpact.missouri@gmail.com?Subject=TPO%20Golf%20Tournament" target="_top">email</a> our Tournament Chairperson, Jodi Sundaram.</p>
     </div>
-	</section>
-	
-	<section id="about" class="info_block">
-		<h2>About Tom</h2>
-    <div id="twocolumn" class="clearfix">
+    <div class="infoblockright">
+      <div id="register_buttons">
+        <button class="register_button" id="single">Single Registration</button>
+        <button class="register_button" id="team">Team Registration</button>
+      </div>
+      <div id="register_single">
+        <h3>Single Registration</h3>
+        <form>
+          <div class="input_field">
+            <span><i aria-hidden="true" class="fa fa-envelope"></i></span> <input name="firstname" placeholder="First Name" required="" type="text">
+          </div>
+          <div class="input_field">
+            <span><i aria-hidden="true" class="fa fa-lock"></i></span> <input name="lastname" placeholder="Last Name" required="" type="text">
+          </div>
+          <div class="input_field">
+            <span><i aria-hidden="true" class="fa fa-lock"></i></span> <input name="email" placeholder="Email" required="" type="text">
+          </div>
+          <div class="input_field">
+            <span><i aria-hidden="true" class="fa fa-user"></i></span> <input maxlength="10" name="phonenumber" placeholder="Phone Number" type="text">
+          </div>
+          <div class="input_field">
+            <span><i aria-hidden="true" class="fa fa-user"></i></span> <input name="address" placeholder="Street Address" required="" type="text">
+          </div>
+          <div class="input_field">
+            <span><i aria-hidden="true" class="fa fa-user"></i></span> <input name="city" placeholder="City" required="" type="text">
+          </div>
+          <div class="input_field">
+            <span><i aria-hidden="true" class="fa fa-user"></i></span> <input name="state" placeholder="State" required="" type="text">
+          </div>
+          <div class="input_field">
+            <span><i aria-hidden="true" class="fa fa-user"></i></span> <input name="zip" placeholder="Zip Code" required="" type="text">
+          </div><input type="submit" value="Pay Online">
+        </form>
+      </div>
+      <div id="register_team">
+        <h3>Team Registration</h3>
+        <form>
+          <div class="input_field">
+            <span><i aria-hidden="true" class="fa fa-envelope"></i></span> <input name="firstname" placeholder="First Name" required="" type="text">
+          </div>
+          <div class="input_field">
+            <span><i aria-hidden="true" class="fa fa-lock"></i></span> <input name="lastname" placeholder="Last Name" required="" type="text">
+          </div>
+          <div class="input_field">
+            <span><i aria-hidden="true" class="fa fa-lock"></i></span> <input name="email" placeholder="Email" required="" type="text">
+          </div>
+          <div class="input_field">
+            <span><i aria-hidden="true" class="fa fa-user"></i></span> <input maxlength="10" name="phonenumber" placeholder="Phone Number" type="text">
+          </div>
+          <div class="input_field">
+            <span><i aria-hidden="true" class="fa fa-user"></i></span> <input name="address" placeholder="Street Address" required="" type="text">
+          </div>
+          <div class="input_field">
+            <span><i aria-hidden="true" class="fa fa-user"></i></span> <input name="city" placeholder="City" required="" type="text">
+          </div>
+          <div class="input_field">
+            <span><i aria-hidden="true" class="fa fa-user"></i></span> <input name="state" placeholder="State" required="" type="text">
+          </div>
+          <div class="input_field">
+            <span><i aria-hidden="true" class="fa fa-user"></i></span> <input name="zip" placeholder="Zip Code" required="" type="text">
+          </div>
+          <div class="input_field">
+            <span><i aria-hidden="true" class="fa fa-user"></i></span> <input name="team_name" placeholder="Name of Your Team" required="" type="text">
+          </div>
+          <div class="input_field">
+            <span><i aria-hidden="true" class="fa fa-user"></i></span> <input name="name" placeholder="Golfer #1 Name" required="" type="text">
+          </div>
+          <div class="input_field">
+            <span><i aria-hidden="true" class="fa fa-user"></i></span> <input name="email" placeholder="Golfer #1 Email" required="" type="text">
+          </div>
+          <div class="input_field">
+            <span><i aria-hidden="true" class="fa fa-user"></i></span> <input name="name" placeholder="Golfer #2 Name" required="" type="text">
+          </div>
+          <div class="input_field">
+            <span><i aria-hidden="true" class="fa fa-user"></i></span> <input name="email" placeholder="Golfer #2 Email" required="" type="text">
+          </div>
+          <div class="input_field">
+            <span><i aria-hidden="true" class="fa fa-user"></i></span> <input name="name" placeholder="Golfer #3 Name" required="" type="text">
+          </div>
+          <div class="input_field">
+            <span><i aria-hidden="true" class="fa fa-user"></i></span> <input name="email" placeholder="Golfer #3 Email" required="" type="text">
+          </div>
+          <div class="input_field">
+            <span><i aria-hidden="true" class="fa fa-user"></i></span> <input name="name" placeholder="Golfer #4 Name" required="" type="text">
+          </div>
+          <div class="input_field">
+            <span><i aria-hidden="true" class="fa fa-user"></i></span> <input name="email" placeholder="Golfer #4 Email" required="" type="text">
+          </div><input type="submit" value="Pay Online">
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="info_block" id="our_research">
+    <div class="clearfix" id="twocolumn">
+    <h2>Our Research</h2>
+    <p id="left">The Thomas P. O'Sullivan IV Foundation funds research at the University of Kansas Cancer Center. Shrikant Anant, PhD, Associate Director- Cancer Prevention and Control, at the University of Kansas Cancer Center, leads a team of scientists that are on the cutting edge of colorectal cancer research. The Foundation provided seed money for two research teams working on root causes and behavior of colorectal cancer. We recognize, and support, the University of Kansas Cancer Center's quest to achieve the National Cancer Institute designation as a Comprehensive Cancer Center. This designation will provide greater Kansas City, and the region, with access to world-class research, advanced cancer care and bring cutting-edge clinical trials close to home.</p><img id="right" src="images/research.jpg"></div>
+  </section>
+  <section class="info_block" id="about">
+    <div class="clearfix" id="twocolumn">
+      <h2>About Tom</h2>
       <img id="left" src="images/dad_about.jpg">
-		  <p id="right">It is a wonderful gift to have someone in your life whose company you treasure simply because they inspire you to be a better person. Sometimes it is their impeccable integrity, their compassion or open-mindedness or perhaps just their willingness to give advice in a gentle and genuine manner with just the right dose of humor. Tom O'Sullivan was 50 years old when he died of colon cancer on June 23, 2007, just four months after diagnosis. A Kansas City native, he was the first-born of a large Irish Catholic family and was a local dentist for 25 years. His passing left a huge void in the lives of all who knew and loved him.</p>
+      <p id="right">It is a wonderful gift to have someone in your life whose company you treasure simply because they inspire you to be a better person. Sometimes it is their impeccable integrity, their compassion or open-mindedness or perhaps just their willingness to give advice in a gentle and genuine manner with just the right dose of humor. Tom O'Sullivan was 50 years old when he died of colon cancer on June 23, 2007, just four months after diagnosis. A Kansas City native, he was the first-born of a large Irish Catholic family and was a local dentist for 25 years. His passing left a huge void in the lives of all who knew and loved him.</p>
     </div>
-	</section>
-
-	<section id="info" class="info_block">
-		<h2>Get Involved</h2>
-      <div id="twocolumn" class="clearfix">
-		  <h3 id="left">Volunteer for the Golf Tournament</h3>
-      <p id="left">Without our volunteers the tournament would not be possible.  Here are a few facts about the tournament and what to expect:
-      Time -  The tournament runs from 11 to 7:00 starting with registration. Volunteers have the option of working All day, 11am-4pm or 3pm to 7pm. 
-      Your role - The day of the tournament volunteers are assigned which hole they will be on and who they are paired with.  All volunteers work in at least pairs. 
-      Food and drinks - Volunteers working all day are provided both lunch and dinner.  Lunch is provided for those who work 11 – 4.  And, those who work 3 to 7 will join us for dinner.  Plenty of water and pop will be provided to volunteers in addition to drink tickets. 
-      We look forward to a beautiful day raising money for colon cancer and would love to spend the day with you. 
-      If you have any additional questions feel free to <a href="mailto:susancoultis@gmail.com?Subject=TPO20%Golf20%Tournament%Volunteer">contact</a> our Volunteer Coordinator, Susie Coultis.<p>
+  </section>
+  <section class="info_block" id="info">
+    <div class="clearfix" id="twocolumn">
+      <h2>Get Involved</h2>
+      <h3 id="left">Volunteer for the Golf Tournament</h3>
+      <p id="left">Without our volunteers the tournament would not be possible. Here are a few facts about the tournament and what to expect: Time - The tournament runs from 11 to 7:00 starting with registration. Volunteers have the option of working All day, 11am-4pm or 3pm to 7pm. Your role - The day of the tournament volunteers are assigned which hole they will be on and who they are paired with. All volunteers work in at least pairs. Food and drinks - Volunteers working all day are provided both lunch and dinner. Lunch is provided for those who work 11 – 4. And, those who work 3 to 7 will join us for dinner. Plenty of water and pop will be provided to volunteers in addition to drink tickets. We look forward to a beautiful day raising money for colon cancer and would love to spend the day with you. If you have any additional questions feel free to <a href="mailto:susancoultis@gmail.com?Subject=TPO20%Golf20%Tournament%Volunteer">contact</a> our Volunteer Coordinator, Susie Coultis.</p>
+      <p></p>
       <h3 id="right">Help Support Our Research Efforts</h3>
-      <p id="right">Our goals are simple. We strive to continue to raise funds and seek out cutting-edge research that is in need of seed money so that great scientists can continue their work in search of better detection, more effective treatments, and ultimately a cure. We look forward to becoming the regional resource organization to provide guidance and direction to colorectal cancer patients seeking counsel and support in their journey. We will continue to collaborate with organizations to drive national and state legislative action pertaining to Colorectal Cancer.  In short, we will strive to make colorectal cancer... "Preventable, Treatable, Beatable." Click the button below to make a donation to our foundation or sponsor our golf tournament.</p>
+      <p id="right">Our goals are simple. We strive to continue to raise funds and seek out cutting-edge research that is in need of seed money so that great scientists can continue their work in search of better detection, more effective treatments, and ultimately a cure. We look forward to becoming the regional resource organization to provide guidance and direction to colorectal cancer patients seeking counsel and support in their journey. We will continue to collaborate with organizations to drive national and state legislative action pertaining to Colorectal Cancer. In short, we will strive to make colorectal cancer... "Preventable, Treatable, Beatable." Click the button below to make a donation to our foundation or sponsor our golf tournament.</p>
     </div>
-	</section>	
+  </section>
+  <footer class="info_block" id="contact">
+    <div class="clearfix" id="twocolumn">
+      <h2>Contact Us</h2>
+      <p id="left">7815 Mohawk Drive•Prairie Village, Kansas 66208•913-488-9155 need to add Social Links</p>
+      <p id="right">The Thomas P. O’Sullivan IV Foundation (TPO IV) is a non-profit organization, whose tax-exempt status under IRS section 501(c)(3) has been recognized by the Internal Revenue Service. Your contributions are tax deductible. Corporate contributions may be accepted.</p>
+      <p>&copy; 2018 TPO IV Foundation</p>
+    </div>
+  </footer>
+  <script type="text/javascript">
+    $('#single').click(function(){
+      $('#register_single').show()
+      $('#register_team').hide();
+      //$('#register_single').slideToggle();
+      //$(this).addClass('active');
+      //$('#team').removeClass('active');
 
-	<footer id="contact" class="info_block">
-		<h2>Contact Us</h2>
-    <div id="twocolumn" class="clearfix">
-		  <p id="left">7815 Mohawk Drive•Prairie Village, Kansas 66208•913-488-9155 need to add    Social Links
-      </p>		
-		  <p id="right">The Thomas P. O’Sullivan IV Foundation (TPO IV) is a non-profit organization, whose tax-exempt status under IRS section 501(c)(3) has been recognized by the Internal Revenue Service. Your contributions are tax deductible. Corporate contributions may be accepted.</p>
-		  <p>&copy; 2018 TPO IV Foundation</p>
-	</footer>
+    });
+    $('#team').click(function(){
+      $('#register_team').show()
+      $('#register_single').hide();
+      //$('#register_team').slideToggle();
+      //$(this).addClass('active');
+      //$('#single').removeClass('active');
 
-<script type="text/javascript">$('a[href*="#"]')
-  // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-    // On-page links
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000, function() {
-          // Callback after animation
-          // Must change focus!
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-          } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-          };
-        });
-      }
-    }
-  });</script>
+    });
+  $('a[href*="#"]')
+   // Remove links that don't actually link to anything
+   .not('[href="#"]')
+   .not('[href="#0"]')
+   .click(function(event) {
+     // On-page links
+     if (
+       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+       && 
+       location.hostname == this.hostname
+     ) {
+       // Figure out element to scroll to
+       var target = $(this.hash);
+       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+       // Does a scroll target exist?
+       if (target.length) {
+         // Only prevent default if animation is actually gonna happen
+         event.preventDefault();
+         $('html, body').animate({
+           scrollTop: target.offset().top
+         }, 1000, function() {
+           // Callback after animation
+           // Must change focus!
+           var $target = $(target);
+           $target.focus();
+           if ($target.is(":focus")) { // Checking if the target was focused
+             return false;
+           } else {
+             $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+             $target.focus(); // Set focus again
+           };
+         });
+       }
+     }
+   });
+  </script>
 </body>
 </html>
