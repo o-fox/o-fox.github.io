@@ -6,17 +6,18 @@
 body {
 	color: #152A7F;
 	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
 }
 nav a {
 	font-weight: 700;
 	color: #000;
 	text-transform: uppercase;
 	padding: 30px;
-	font-size: 16px;
+	font-size: 1em;
 }
 nav a:hover {
 	background-color: rgba(211, 211, 211, .2);
-	height: 20px;
+	height: 1.3em;
 }
 a {
 	color: green;
@@ -27,14 +28,14 @@ a:hover {
 }
 h1 {
 	font-family: 'Pacifico', cursive;
-	letter-spacing: 1.5px;
+	letter-spacing: .1em;
 }
 h2 {
 	font-family: 'Pacifico', cursive;
-	letter-spacing: 1.5px;
+	letter-spacing: .1em;
 }
 h3 {
-	letter-spacing: 1px;
+	letter-spacing: .1em;
 	margin: 1em;
 }
 button {
@@ -48,7 +49,7 @@ a {
 	color: #07401A;
 }
 p {
-	font-size: 16px;
+	font-size: 1em;
 }
 img {
 	display: block;
@@ -64,12 +65,12 @@ footer {
 	padding: 1em 0;
 }
 #title {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 1.3em;
+	padding-bottom: 1.3em;
 	font-weight: 400;
 }
 #hero {
-	margin-top: 20px;
+	margin-top: 1.3em;
 	position: relative;
 }
 #hero:after {
@@ -92,32 +93,32 @@ footer {
 	font-weight: 400;
 	color: #000;
 	text-transform: uppercase;
-	font-size: 16px;
+	font-size: 1em;
 	z-index: 2;
 	line-height: 1.3;
 }
 .info_block {
 	width: 100%;
 	margin: 0 auto;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 1.3em;
+	padding-bottom: 1.3em;
 
 }
 .infoblockleft {
 	width: 50%;
 	float: left;
-	padding: 20px;
+	padding: 1.3em;
 }
 .infoblockright {
 	width: 50%;
 	float: left;
-	padding: 20px;
+	padding: 1.3em;
 }
 #register {
 	background-color: teal;
 }
 .register_button {
-	border: 2px solid green;
+	border: .1em solid green;
 }
 #register_team {
 	display: none;
@@ -136,20 +137,77 @@ footer {
 }
 #twocolumn {
 	background-color: #105ABF;
-	border: 1px black solid;
-	padding: 10px;
+	border: .1em black solid;
+	padding: .8em;
 }
 #left {
 	background-color: #68BF5C;
-	border: 1px blue solid;
-	padding: 10px;
+	border: .1em blue solid;
+	padding: .8em;
 	float: left;
 	width: 62%;
 }
 #right {
 	background-color: #68BF5C;
-	border: 1px blue solid;
-	padding: 10px;
+	border: .1em blue solid;
+	padding: .8em;
 	float: right;
 	width: 30%;
 }
+@media only screen and (max-width: 920px){
+	nav {
+		float: none;
+	}
+	nav a {
+		margin: 0 1.6em .75em 0;
+	}
+}
+@media only screen and (max-width: 750px){
+	#right {
+		width: 100%;
+		float: none;
+		padding: 1em;
+	}
+
+	#left {
+		width: 100%;
+		float: none;
+		padding: 1em;
+	}
+
+	section, div {
+		width: 100%;
+		padding: .6em;
+
+	}
+
+	.infoblockleft {
+		width: 100%;
+		float: none;
+		padding: 1em;
+	}
+
+	.infoblockright {
+		width: 100%;
+		float: none;
+		padding: 1em;
+	}
+}
+
+@media only screen and (max-width: 515px){
+	h1 {
+		display: block;
+		text-align: center;
+	}
+
+	nav a{
+		display: block;
+		text-align: left;
+		padding: .2em;
+		font-size: .8em;
+		font-weight: 600;
+	}
+
+	#herotext {
+		font-size: .8em;
+	}
