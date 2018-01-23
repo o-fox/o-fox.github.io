@@ -8,6 +8,17 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 }
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.text_center {
+	text-align: center;
+}
 nav a {
 	font-weight: 700;
 	color: #000;
@@ -33,10 +44,11 @@ h1 {
 h2 {
 	font-family: 'Pacifico', cursive;
 	letter-spacing: .1em;
+	padding-left: 30px;
 }
 h3 {
 	letter-spacing: .1em;
-	margin: 1em;
+	margin: 1em 0;
 }
 button {
 	background-color: transparent;
@@ -59,9 +71,7 @@ form {
 	display: inline-block;
 	padding: 1em;
 }
-}
 footer {
-	text-align: center;
 	padding: 1em 0;
 }
 #title {
@@ -102,17 +112,17 @@ footer {
 	margin: 0 auto;
 	padding-top: 1.3em;
 	padding-bottom: 1.3em;
-
+	max-width: 1200px;
 }
 .infoblockleft {
 	width: 50%;
 	float: left;
-	padding: 1.3em;
+	padding: 30px;
 }
 .infoblockright {
 	width: 50%;
 	float: left;
-	padding: 1.3em;
+	padding: 30px;
 }
 #register {
 	background-color: teal;
@@ -125,72 +135,60 @@ footer {
 	border: left;
 }
 #our_research {
-	background-color: yellow;
+	background-color: #10BF53;
 }
-.clearfix:after {
-	visibility: hidden;
-	display: block;
-	font-size: 0;
-	content: " ";
-	clear: both;
-	height: 0;
+#our_research .infoblockleft {
+	width: 70%;
 }
-#twocolumn {
-	background-color: #105ABF;
-	border: .1em black solid;
-	padding: .8em;
+#our_research .infoblockright{
+	width: 30%;
 }
-#left {
+#about {
+	background-color: #8EDEE5;
+}
+#dad {
 	background-color: #68BF5C;
 	border: .1em blue solid;
 	padding: .8em;
 	float: left;
 	width: 62%;
+	height: 0;
+	padding-bottom: 62%;
+	background-image: url(../images/dad_about.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	overflow: hidden;
 }
-#right {
-	background-color: #68BF5C;
-	border: .1em blue solid;
-	padding: .8em;
-	float: right;
-	width: 30%;
+#info {
+	background-color: #1FE5B0;
+}
+#contact {
+	background-color: #8EDEE5;
 }
 @media only screen and (max-width: 920px){
-	nav {
-		float: none;
-	}
-	nav a {
-		margin: 0 1.6em .75em 0;
+	nav a{
+		display: block;
+		text-align: center;
+		padding: .2em;
+		font-size: 1em;
+		font-weight: 700;
 	}
 }
 @media only screen and (max-width: 750px){
-	#right {
+	.infoblockright {
 		width: 100%;
 		float: none;
-		padding: 1em;
-	}
-
-	#left {
-		width: 100%;
-		float: none;
-		padding: 1em;
-	}
-
-	section, div {
-		width: 100%;
-		padding: .6em;
-
+		padding: 20px;
 	}
 
 	.infoblockleft {
 		width: 100%;
 		float: none;
-		padding: 1em;
+		padding: 20px;
 	}
-
-	.infoblockright {
-		width: 100%;
-		float: none;
-		padding: 1em;
+	h2 {
+		padding-left: 20px;
 	}
 }
 
